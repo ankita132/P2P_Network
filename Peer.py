@@ -6,7 +6,7 @@ import Pyro4.naming
 import socket
 import time
 
-class Peer(object):
+class Peer(Thread):
     def __init__(self, id, role, no_of_items, items, host_server, all_nodes):
         self.id = id
         self.role = role
@@ -16,9 +16,9 @@ class Peer(object):
         self.item = items[random.randint(0, len(items) - 1)]
         self.neighbors = []
         self.all_nodes = all_nodes
-        #Thread.__init__(self)
+        Thread.__init__(self)
         self.hostname = socket.gethostname()
-        #self.executor = ThreadPoolExecutor(max_workers=10)
+        self.executor = ThreadPoolExecutor(max_workers=10)
 
     def get_neighbors(self):
         # neighbors set 1 to 3
@@ -42,9 +42,9 @@ class Peer(object):
                 self.ns.register(self.id, uri)
 
                 self.neighbors = self.get_neighbors()
-                print(self.id, self.role, self.item, self.neighbors)
+                # print(self.id, self.role, self.item, self.neighbors)
 
-                daemon.requestLoop()
+                self.executor.submit(daemon.requestLoop)
 
                 while True:
                     time.sleep(1)
@@ -55,6 +55,12 @@ class Peer(object):
     @Pyro4.expose
     def establish_message(self, message):
         print(self.id, self.role, message, "do something")
+
+    @Pyro4.expose
+    def send_message_to_neighbors(self, message):
+        for neighbor_uri in self.neighbors:
+            neighbor = Pyro4.Proxy(neighbor_uri)
+            neighbor.establish_message(message)
 
     @Pyro4.expose
     def lookup(self, buyerID, hopcount, search_path):

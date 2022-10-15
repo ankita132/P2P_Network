@@ -1,10 +1,8 @@
 import config as cfg
 import sys
 import random
-from multiprocessing import Process
 from Peer import Peer
 import socket
-from threading import Thread
 import Pyro4
 import os
 
@@ -45,10 +43,10 @@ def get_peers():
     return jobs;
 
 
-def process_func(threads):
-    for peer in threads:
-        peer.run()
-    for peer in threads:
+def process_func(jobs):
+    for peer in jobs:
+        peer.start()
+    for peer in jobs:
         peer.join()
 
 if __name__ == '__main__':
@@ -58,12 +56,7 @@ if __name__ == '__main__':
     
     try:
         if(check_logistics(jobs)):
-            n = len(jobs)
-            processes = [Process(target=process_func, args=([thread],)) for thread in jobs]
-            for process in processes:
-                process.start()
-            for process in processes:
-                process.join()
+            process_func(jobs)
 
     except KeyboardInterrupt:
         sys.exit()
