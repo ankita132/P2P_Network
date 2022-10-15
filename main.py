@@ -17,7 +17,7 @@ def check_logistics(jobs):
 def get_peers():
     if(len(sys.argv) < 2):
         print("Please specify the number of nodes")
-        exit(-1)
+        sys.exit()
 
     no_of_nodes = int(sys.argv[1])
     jobs = []
@@ -44,16 +44,26 @@ def get_peers():
 
     return jobs;
 
+
+def process_func(threads):
+    for peer in threads:
+        peer.run()
+    for peer in threads:
+        peer.join()
+
 if __name__ == '__main__':
+    #loop 
     jobs = get_peers()
     print(os.getcwd())
+    
     try:
         if(check_logistics(jobs)):
-            for peer in jobs:
-                # make this path universal
-                os.chdir("/Users/ankita132/Documents/umass/677/lab/lab1/peers")
-                peer.start()
-                peer.join()
+            n = len(jobs)
+            processes = [Process(target=process_func, args=([thread],)) for thread in jobs]
+            for process in processes:
+                process.start()
+            for process in processes:
+                process.join()
 
     except KeyboardInterrupt:
         sys.exit()
