@@ -22,10 +22,11 @@ class Peer(Thread):
 
     def get_neighbors(self):
         # neighbors set 1 to 3
-        list = random.sample(self.all_nodes, 3)
+        list = filter(lambda val: val["id"] != self.id, random.sample(self.all_nodes, 3))
+
         neighbors = []
         for neighbor in list:
-            neighbors.append(self.ns.lookup(neighbor["id"]))
+            neighbors.append(neighbor["id"])
 
         return neighbors
 
@@ -42,8 +43,8 @@ class Peer(Thread):
                 self.ns.register(self.id, uri)
 
                 self.neighbors = self.get_neighbors()
-                # print(self.id, self.role, self.item, self.neighbors)
-
+                print(self.id, self.role, self.item, self.neighbors)
+                #daemon.requestLoop()
                 self.executor.submit(daemon.requestLoop)
 
                 while True:
@@ -58,7 +59,9 @@ class Peer(Thread):
 
     @Pyro4.expose
     def send_message_to_neighbors(self, message):
-        for neighbor_uri in self.neighbors:
+        print(self.id)
+        for neighbor_id in self.neighbors:
+            neighbor_uri = self.ns.lookup(neighbor_id)
             neighbor = Pyro4.Proxy(neighbor_uri)
             neighbor.establish_message(message)
 
