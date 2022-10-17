@@ -16,6 +16,7 @@ def check_logistics(jobs):
 
 def process_func(all_nodes, no_of_items, items, host_server, i):
     #print(os.getpid())
+    os.chdir("/")
     peer = Peer(all_nodes[i]["id"], all_nodes[i]["role"], no_of_items, items, host_server, all_nodes)
     peer.start()
     peer.join()
