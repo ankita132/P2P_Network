@@ -15,14 +15,14 @@ def check_logistics(jobs):
     return True
 
 def process_func(all_nodes, no_of_items, items, host_server, i):
-    print(os.getpid())
+    #print(os.getpid())
     peer = Peer(all_nodes[i]["id"], all_nodes[i]["role"], no_of_items, items, host_server, all_nodes)
     peer.start()
     peer.join()
 
 if __name__ == '__main__':
     #loop 
-    print(os.getcwd())
+    #print(os.getcwd())
     if(len(sys.argv) < 2):
         print("Please specify the number of nodes")
         sys.exit()

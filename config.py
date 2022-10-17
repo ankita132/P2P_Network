@@ -4,5 +4,5 @@ market_data = {
     "items_size": 10
 }
 
-local_server = "localhost"
+local_server = "127.0.0.1"
 use_anonymous = True
