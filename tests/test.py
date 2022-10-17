@@ -4,10 +4,12 @@ import socket
 
 if __name__ == '__main__':
     ns = Pyro4.locateNS(host="127.0.0.1")
-    for i in range(6):
-        uri = ns.lookup(str(i)+"_" + socket.gethostname())
-        peer1 = Pyro4.Proxy(uri)
-        peer1.send_message_to_neighbors("hello you can listesn right")
+    # for i in range(6):
+    #     uri = ns.lookup(str(i)+"_" + socket.gethostname())
+    #     peer1 = Pyro4.Proxy(uri)
+        # peer1.send_message_to_neighbors("hello you can listesn right")
+    peer1 = Pyro4.Proxy(ns.lookup(str(1)+"_" + socket.gethostname()))
+    peer1.lookup("2_Beena-MacBook-Pro.local","SALT",3,[])
     # 
     # 
     # peer1.lookup("2_Ankitas-MacBook-Pro.local", "SALT", 5, [])

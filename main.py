@@ -14,9 +14,9 @@ def check_logistics(jobs):
     # might include other checks
     return True
 
-def process_func(all_nodes, no_of_items, items, host_server, i):
+def process_func(all_nodes, no_of_items, items, max_items, host_server, i):
     print(os.getpid())
-    peer = Peer(all_nodes[i]["id"], all_nodes[i]["role"], no_of_items, items, host_server, all_nodes)
+    peer = Peer(all_nodes[i]["id"], all_nodes[i]["role"], no_of_items, items, max_items, host_server, all_nodes)
     peer.start()
     peer.join()
 
@@ -31,6 +31,7 @@ if __name__ == '__main__':
     items = cfg.market_data["items"]
     roles = cfg.market_data["roles"]
     no_of_items = cfg.market_data["items_size"]
+    max_items = cfg.market_data["max_items"]
     host_server = cfg.local_server
     all_nodes = []
 
@@ -48,7 +49,7 @@ if __name__ == '__main__':
         if(check_logistics(all_nodes)):
             processes = []
             for i in range (0, len(all_nodes)):
-                processes.append(Process(target=process_func, args=(all_nodes,no_of_items,items, host_server,i, )))
+                processes.append(Process(target=process_func, args=(all_nodes,no_of_items,items, max_items, host_server,i, )))
                 
             for process in processes:
                 process.start()
