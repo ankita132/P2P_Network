@@ -19,6 +19,7 @@ class Peer(Thread):
         Thread.__init__(self)
         self.hostname = socket.gethostname()
         self.executor = ThreadPoolExecutor(max_workers=10)
+        self.sellers = []
 
     def get_neighbors(self):
         # neighbors set 1 to 3
@@ -47,6 +48,10 @@ class Peer(Thread):
                 #daemon.requestLoop()
                 self.executor.submit(daemon.requestLoop)
 
+                while True and self.role == "BUY":
+                    #print("lol")
+                    time.sleep(1)
+
                 while True:
                     time.sleep(1)
                 
@@ -66,7 +71,7 @@ class Peer(Thread):
             neighbor.establish_message(message)
 
     @Pyro4.expose
-    def lookup(self, buyerID, hopcount, search_path):
+    def lookup(self, product_name, hopcount, id_list):
         return
 
     @Pyro4.expose

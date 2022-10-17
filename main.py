@@ -4,6 +4,8 @@ import random
 from Peer import Peer
 import socket
 import Pyro4
+from multiprocessing import Process
+from threading import Thread
 import os
 
 def check_logistics(jobs):
@@ -12,13 +14,20 @@ def check_logistics(jobs):
     # might include other checks
     return True
 
-def get_peers():
+def process_func(all_nodes, no_of_items, items, host_server, i):
+    print(os.getpid())
+    peer = Peer(all_nodes[i]["id"], all_nodes[i]["role"], no_of_items, items, host_server, all_nodes)
+    peer.start()
+    peer.join()
+
+if __name__ == '__main__':
+    #loop 
+    print(os.getcwd())
     if(len(sys.argv) < 2):
         print("Please specify the number of nodes")
         sys.exit()
 
     no_of_nodes = int(sys.argv[1])
-    jobs = []
     items = cfg.market_data["items"]
     roles = cfg.market_data["roles"]
     no_of_items = cfg.market_data["items_size"]
@@ -34,29 +43,17 @@ def get_peers():
         role = roles[random.randint(0,len(roles) - 1)]
         id = str(i) + "_" + socket.gethostname()
         all_nodes.append({"id": id, "role": role})
-
-    for i in range(no_of_nodes):
-        peer = Peer(all_nodes[i]["id"], all_nodes[i]["role"], no_of_items, items, host_server, all_nodes)
-        jobs.append(peer)
-        #jobs.append(node)
-
-    return jobs;
-
-
-def process_func(jobs):
-    for peer in jobs:
-        peer.start()
-    for peer in jobs:
-        peer.join()
-
-if __name__ == '__main__':
-    #loop 
-    jobs = get_peers()
-    print(os.getcwd())
     
     try:
-        if(check_logistics(jobs)):
-            process_func(jobs)
+        if(check_logistics(all_nodes)):
+            processes = []
+            for i in range (0, len(all_nodes)):
+                processes.append(Process(target=process_func, args=(all_nodes,no_of_items,items, host_server,i, )))
+                
+            for process in processes:
+                process.start()
+            for process in processes:
+                process.join()
 
     except KeyboardInterrupt:
         sys.exit()
