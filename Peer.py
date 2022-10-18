@@ -157,8 +157,8 @@ class Peer(Thread):
             if self.role == "SELL" and product_name == self.item and self.current_items > -1:
                 with Pyro4.Proxy(self.ns.lookup(last_peer_id)) as recipient:
                     search_path.pop()
-                    search_path.insert(0, self.id)
-                    self.executor.submit(recipient.reply, self.id, search_path)
+                search_path.insert(0, self.id)
+                self.executor.submit(recipient.reply, self.id, search_path)
             else:
                 neighbors_copy = copy.deepcopy(self.neighbors)
 
@@ -185,11 +185,8 @@ class Peer(Thread):
 
             elif reply_path and len(reply_path) > 1:
                 recipient_id = reply_path.pop()
-                if(recipient_id in self.neighbors):
-                    with Pyro4.Proxy(self.neighbors[recipient_id]) as recipient:
-                        self.executor.submit(recipient.reply, self.id, reply_path)
-                else:
-                    print("No neighbors corresponding to ", recipient_id, " exists for ", self.id)
+                with Pyro4.Proxy(self.ns.lookup(recipient_id)) as recipient:
+                    self.executor.submit(recipient.reply, self.id, reply_path)
             
             else:
                 print("The reply path is empty")
