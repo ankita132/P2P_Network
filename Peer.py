@@ -3,14 +3,12 @@ from concurrent.futures import ThreadPoolExecutor
 import random
 import Pyro4
 import Pyro4.naming
-import socket
 import time
 import copy
 import sys
-import config as cfg
 
 class Peer(Thread):
-    def __init__(self, id, role, no_of_items, items, host_server, all_nodes):
+    def __init__(self, id, role, no_of_items, items, host_server, all_nodes, neighbor_ids, hopcount):
         self.id = id
         self.role = role
         self.current_items = no_of_items
@@ -20,24 +18,23 @@ class Peer(Thread):
         self.item = self.get_random_item()
         self.neighbors = {}
         self.all_nodes = all_nodes
+        self.neighbor_ids = neighbor_ids
         self.seller_list_lock = Lock()
         self.itemlock = Lock()
         Thread.__init__(self)
-        self.hostname = socket.gethostname()
-        self.executor = ThreadPoolExecutor(max_workers=20)
+        self.hostname = host_server
+        self.executor = ThreadPoolExecutor(max_workers=10)
         self.sellers = []
         self.requests = 0
+        self.hopcount = hopcount
     
     def get_random_item(self):
         return self.items[random.randint(0, len(self.items) - 1)]
 
     def get_neighbors(self):
-        # neighbors set 1 to 3
-        list = filter(lambda val: val["id"] != self.id, random.sample(self.all_nodes, 3))
-
         neighbors = {}
-        for neighbor in list:
-            neighbors[neighbor["id"]] = self.ns.lookup(neighbor["id"])
+        for neighbor_id in self.neighbor_ids:
+            neighbors[neighbor_id] = self.ns.lookup(neighbor_id)
 
         return neighbors
 
@@ -60,54 +57,56 @@ class Peer(Thread):
                 self.neighbors = self.get_neighbors()
                 print(self.id, self.role, self.item, self.neighbors)
 
-                while True and self.role == "BUY":
-                    lookup_requests = []
-                    print("---------------- NEW PURCHASE TO BE STARTED -------------------\n")
-                    neighbors_copy = copy.deepcopy(self.neighbors)
-
-                    for neighbor_id in neighbors_copy:
-                        with Pyro4.Proxy(neighbors_copy[neighbor_id]) as neighbor:
-                            search_path = [self.id]
-                            print(time.time(), self.id, "issues a lookup to", neighbor_id, "for", self.item)
-                            
-                            lookup_requests.append(self.executor.submit(neighbor.lookup, self.id, self.item, 4, search_path))
-                    
-                    found = False
-
-                    for lookup_request in lookup_requests:
-                        if(lookup_request.result()):
-                            found = True
-
-                    if(found == False):
-                        print("No purchase could be done for ", self.id, " to buy ", self.item)
-                        
-                    with self.seller_list_lock:
-                        if self.sellers:
-                            random_seller_id = self.sellers[random.randint(0, len(self.sellers) - 1)]
-
-                            with Pyro4.Proxy(self.ns.lookup(random_seller_id)) as seller:
-                                future = self.executor.submit(seller.buy, self.id)
-
-                                if future.result():
-                                    print(time.time(), self.id, "bought", self.item, "from", random_seller_id)
-                                else:
-                                    print(time.time(), self.id, "failed to buy", self.item, "from", random_seller_id)
-                                
-                                self.requests += 1
-
-                        self.sellers = []
-                        self.item = self.get_random_item()
-                        print("\n\n")
-                    
-                    time.sleep(2)
-
-                while True and self.role == "SELL":
-                    time.sleep(2)
+                self.start_buy_sell()
+                # while True:
+                #     time.sleep(1)
                 
         except Exception as e:
-            template = "An exception of type {0} occurred at run. Arguments:\n{1!r}"
-            message = template.format(type(e).__name__, e.args)
-            print(message)
+            print("Exception occurred at run function")
+            print(e)
+
+    def start_buy_sell(self):
+        while True and self.role == "BUY":
+            lookup_requests = []
+            print("---------------- NEW PURCHASE TO BE STARTED -------------------\n")
+            neighbors_copy = copy.deepcopy(self.neighbors)
+
+            for neighbor_id in neighbors_copy:
+                with Pyro4.Proxy(neighbors_copy[neighbor_id]) as neighbor:
+                    search_path = [self.id]
+                    print(time.time(), self.id, "issues a lookup to", neighbor_id, "for", self.item)
+                            
+                    lookup_requests.append(self.executor.submit(neighbor.lookup, self.id, self.item, self.hopcount, search_path))
+                    
+            found = False
+
+            for lookup_request in lookup_requests:
+                if(lookup_request.result()):
+                    found = True
+
+            if(found == False):
+                print("No purchase could be done for ", self.id, " to buy ", self.item)
+
+            with self.seller_list_lock:
+                if self.sellers:
+                    random_seller_id = self.sellers[random.randint(0, len(self.sellers) - 1)]
+
+                    with Pyro4.Proxy(self.ns.lookup(random_seller_id)) as seller:
+                        future = self.executor.submit(seller.buy, self.id)
+
+                        if future.result():
+                            print(time.time(), self.id, "bought", self.item, "from", random_seller_id)
+                        else:
+                            print(time.time(), self.id, "failed to buy", self.item, "from", random_seller_id)
+
+                self.sellers = []
+                self.item = self.get_random_item()
+                print("\n\n")
+                    
+            time.sleep(2)
+
+        while True and self.role == "SELL":
+            time.sleep(2)
 
     @Pyro4.expose
     def establish_message(self, message):
@@ -149,8 +148,8 @@ class Peer(Thread):
     def lookup(self, buyer_id, product_name, hopcount, search_path):
         hopcount -= 1
 
-        if hopcount <= 0:
-            print("Done with hopping for ", buyer_id, "to buy ", product_name)
+        if hopcount < 0:
+            #print("Done with hopping for ", buyer_id, "to buy ", product_name)
             return
         
         last_peer_id = search_path[-1]
@@ -206,7 +205,7 @@ class Peer(Thread):
         with self.itemlock:
             if self.current_items > 0:
                 self.current_items -= 1
-                print(time.time(), peer_id, "purchased", self.item, "from", self.id, self.total_items, "remains now")
+                #print(time.time(), peer_id, "purchased", self.item, "from", self.id, self.total_items, "remains now")
                 return True
             # No more items to sell, randomly pick up another item
             else:
