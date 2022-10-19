@@ -1,3 +1,4 @@
+import socket
 from threading import Thread, Lock
 from concurrent.futures import ThreadPoolExecutor
 import random
@@ -6,6 +7,8 @@ import Pyro4.naming
 import time
 import copy
 import sys
+import config as cfg
+from TestGraph import mapped_items
 
 class Peer(Thread):
     def __init__(self, id, role, no_of_items, items, host_server, all_nodes, neighbor_ids, hopcount):
@@ -29,6 +32,9 @@ class Peer(Thread):
         self.hopcount = hopcount
     
     def get_random_item(self):
+        if(cfg.env == "TEST"):
+            i = int(self.id.replace("_" + socket.gethostname(), ""))
+            return mapped_items[i]
         return self.items[random.randint(0, len(self.items) - 1)]
 
     def get_neighbors(self):
@@ -77,15 +83,9 @@ class Peer(Thread):
                     print(time.time(), self.id, "issues a lookup to", neighbor_id, "for", self.item)
                             
                     lookup_requests.append(self.executor.submit(neighbor.lookup, self.id, self.item, self.hopcount, search_path))
-                    
-            found = False
 
             for lookup_request in lookup_requests:
-                if(lookup_request.result()):
-                    found = True
-
-            if(found == False):
-                print("No purchase could be done for ", self.id, " to buy ", self.item)
+                lookup_request.result()
 
             with self.seller_list_lock:
                 if self.sellers:
@@ -102,11 +102,13 @@ class Peer(Thread):
                 self.sellers = []
                 self.item = self.get_random_item()
                 print("\n\n")
+                #if(time.time() >= cfg.MARKET_UP_TIME_TEST): break
                     
             time.sleep(2)
 
         while True and self.role == "SELL":
             time.sleep(2)
+            #if(time.time() >= cfg.MARKET_UP_TIME_TEST): break
 
     @Pyro4.expose
     def establish_message(self, message):
