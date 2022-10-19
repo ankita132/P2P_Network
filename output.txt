@@ -1,0 +1,326 @@
+3
+0_Ankitas-MacBook-Pro.local BUY FISH {'1_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x1077e5450; PYRO:obj_9d729513855a492a873d73768888eae6@127.0.0.1:59576>, '2_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x1077e5600; PYRO:obj_60d2d84f023b45719a5c43638075024c@127.0.0.1:59579>}
+2022-10-19 16:59:13.399797 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:13.399944 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:13.408961 Buyer 0 issued a lookup to neighbour 2 for item FISH
+2022-10-19 16:59:13.410493 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.419150 Buyer 0 bought FISH from Seller 4
+
+
+2022-10-19 16:59:13.419301 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:13.419370 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:13.420639 Buyer 0 issued a lookup to neighbour 2 for item FISH
+
+
+2022-10-19 16:59:13.429183 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:13.429252 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:13.432364 Buyer 0 issued a lookup to neighbour 2 for item FISH
+2022-10-19 16:59:13.450727 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.475611 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.510669 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.527339 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.542789 Buyer 0 bought FISH from Seller 4
+
+
+2022-10-19 16:59:13.542889 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:13.542959 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:13.579862 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.590488 Buyer 0 issued a lookup to neighbour 2 for item FISH
+2022-10-19 16:59:13.717073 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.739101 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.740023 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.741989 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.759412 Buyer 0 bought FISH from Seller 4
+
+
+2022-10-19 16:59:13.759525 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:13.759592 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:13.764566 Buyer 0 issued a lookup to neighbour 2 for item FISH
+2022-10-19 16:59:13.797259 Buyer 0 bought FISH from Seller 4
+
+
+2022-10-19 16:59:13.797440 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:13.797558 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:13.800012 Buyer 0 issued a lookup to neighbour 2 for item FISH
+2022-10-19 16:59:13.805011 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.812092 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.816226 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.834080 Buyer 0 bought FISH from Seller 4
+
+
+2022-10-19 16:59:13.834275 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:13.834352 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:13.851077 Buyer 0 issued a lookup to neighbour 2 for item FISH
+2022-10-19 16:59:13.866679 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.869086 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.880626 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.885728 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.894551 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.894808 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.921812 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.961703 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:13.979158 Buyer 0 bought FISH from Seller 4
+
+
+2022-10-19 16:59:13.979344 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:13.979413 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:13.988421 Buyer 0 issued a lookup to neighbour 2 for item FISH
+2022-10-19 16:59:14.038181 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.067699 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.069625 Buyer 0 bought FISH from Seller 4
+
+
+2022-10-19 16:59:14.069830 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:14.069910 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:14.088817 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.102421 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.104442 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.113453 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.115778 Buyer 0 issued a lookup to neighbour 2 for item FISH
+2022-10-19 16:59:14.146274 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.146613 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.166217 Buyer 0 bought FISH from Seller 4
+
+
+2022-10-19 16:59:14.168502 Buyer 0 is requesting to buy FISH
+2022-10-19 16:59:14.168577 Buyer 0 issued a lookup to neighbour 1 for item FISH
+2022-10-19 16:59:14.182034 Buyer 0 issued a lookup to neighbour 2 for item FISH
+2022-10-19 16:59:14.185652 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.211422 Buyer 0 bought FISH from Seller 4
+
+
+2022-10-19 16:59:14.220484 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.221327 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.260646 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.264419 Buyer 0 received a reply from Seller 4
+2022-10-19 16:59:14.309531 Buyer 0 received a reply from Seller 4
+2_Ankitas-MacBook-Pro.local BUY BOAR {'3_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10c225450; PYRO:obj_a481358c99b04b149e73ee7d2f35fdde@127.0.0.1:59582>, '5_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10c225600; PYRO:obj_62ded7d6e9184e1a95b3493fefd59f7f@127.0.0.1:59586>}
+2022-10-19 16:59:13.396875 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.397018 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.399413 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+2022-10-19 16:59:13.404802 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.409678 Buyer 2 bought BOAR from Seller 5
+
+
+2022-10-19 16:59:13.410235 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.410313 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.411774 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+
+
+2022-10-19 16:59:13.417168 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.417241 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.417515 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.418684 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+2022-10-19 16:59:13.425587 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.433959 Buyer 2 bought BOAR from Seller 5
+
+
+2022-10-19 16:59:13.434102 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.434169 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.436115 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+2022-10-19 16:59:13.451099 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.479553 Buyer 2 bought BOAR from Seller 5
+
+
+2022-10-19 16:59:13.479653 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.479742 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.496407 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+2022-10-19 16:59:13.511245 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.544200 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.569486 Buyer 2 bought BOAR from Seller 5
+
+
+2022-10-19 16:59:13.569625 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.569719 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.590138 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+2022-10-19 16:59:13.659500 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.678421 Buyer 2 bought BOAR from Seller 5
+
+
+2022-10-19 16:59:13.679966 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.680546 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.685342 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+2022-10-19 16:59:13.687499 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.708902 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.753931 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.780736 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.834613 Buyer 2 bought BOAR from Seller 5
+
+
+2022-10-19 16:59:13.834752 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.834854 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.844581 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+2022-10-19 16:59:13.859372 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.906244 Buyer 2 bought BOAR from Seller 5
+
+
+2022-10-19 16:59:13.906759 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.906828 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.910881 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+2022-10-19 16:59:13.929972 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.938319 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:13.939377 Buyer 2 bought BOAR from Seller 5
+
+
+2022-10-19 16:59:13.939847 Buyer 2 is requesting to buy BOAR
+2022-10-19 16:59:13.939913 Buyer 2 issued a lookup to neighbour 3 for item BOAR
+2022-10-19 16:59:13.944776 Buyer 2 issued a lookup to neighbour 5 for item BOAR
+2022-10-19 16:59:13.973755 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:14.057123 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:14.115207 Buyer 2 received a reply from Seller 5
+2022-10-19 16:59:14.117464 Buyer 2 bought BOAR from Seller 5
+
+
+3_Ankitas-MacBook-Pro.local BUY SALT {'0_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10ecfda20; PYRO:obj_7b3c226cdf0f4e178b8ac9e1e1451df6@127.0.0.1:59580>, '4_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10ecfe080; PYRO:obj_c6054e00556e4cea999ae2e031f9d621@127.0.0.1:59585>, '5_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10ecfe3b0; PYRO:obj_62ded7d6e9184e1a95b3493fefd59f7f@127.0.0.1:59586>}
+2022-10-19 16:59:13.423813 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:13.423918 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:13.457240 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:13.467357 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:13.473523 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:13.555899 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:13.556057 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:13.556141 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:13.563573 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:13.696671 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:13.711760 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:13.723439 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:13.743721 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:13.747860 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:13.752717 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:13.759990 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:13.788498 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:13.967480 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:13.967642 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:13.967736 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:13.974985 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:13.982848 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:14.012160 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.079021 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.082524 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.096815 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.173857 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.174508 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.176925 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.188020 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:14.188417 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:14.188569 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:14.192902 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:14.193739 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:14.235961 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.249540 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.255540 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.278442 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:14.278566 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:14.278667 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:14.285214 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:14.296776 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.299231 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:14.308176 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.308467 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.322948 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:14.323070 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:14.323171 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:14.327284 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.329161 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:14.330339 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:14.355997 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.364129 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.367265 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.371716 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:14.371889 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:14.371988 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:14.372871 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.377502 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:14.378418 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:14.384857 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.394790 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.404374 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.406856 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.431044 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.436290 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.451958 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:14.452179 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:14.452323 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:14.456785 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.457398 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.458387 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:14.459520 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:14.467201 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.507523 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.515376 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.528222 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.559022 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:14.559349 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:14.559459 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:14.560931 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:14.561340 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.562086 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:14.588971 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.592581 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.594700 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.602313 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.608008 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:14.608902 Buyer 3 is requesting to buy SALT
+2022-10-19 16:59:14.608978 Buyer 3 issued a lookup to neighbour 0 for item SALT
+2022-10-19 16:59:14.610904 Buyer 3 issued a lookup to neighbour 4 for item SALT
+2022-10-19 16:59:14.615279 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.615966 Buyer 3 issued a lookup to neighbour 5 for item SALT
+2022-10-19 16:59:14.631786 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.656178 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.658275 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.659117 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 16:59:14.662660 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.666341 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:14.673466 Buyer 3 received a reply from Seller 1
+2022-10-19 16:59:13.409048 Seller 5 has 9 items of BOAR remaining after selling to Buyer 2
+2022-10-19 16:59:13.431873 Seller 5 has 8 items of BOAR remaining after selling to Buyer 2
+5_Ankitas-MacBook-Pro.local SELL BOAR {'0_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x106d63b20; PYRO:obj_7b3c226cdf0f4e178b8ac9e1e1451df6@127.0.0.1:59580>, '4_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x106d63310; PYRO:obj_c6054e00556e4cea999ae2e031f9d621@127.0.0.1:59585>}
+2022-10-19 16:59:13.476453 Seller 5 has 7 items of BOAR remaining after selling to Buyer 2
+2022-10-19 16:59:13.565304 Seller 5 has 6 items of BOAR remaining after selling to Buyer 2
+2022-10-19 16:59:13.675599 Seller 5 has 5 items of BOAR remaining after selling to Buyer 2
+2022-10-19 16:59:13.834381 Seller 5 has 4 items of BOAR remaining after selling to Buyer 2
+2022-10-19 16:59:13.906050 Seller 5 has 3 items of BOAR remaining after selling to Buyer 2
+2022-10-19 16:59:13.938884 Seller 5 has 2 items of BOAR remaining after selling to Buyer 2
+2022-10-19 16:59:14.117242 Seller 5 has 1 items of BOAR remaining after selling to Buyer 2
+1_Ankitas-MacBook-Pro.local SELL SALT {'4_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x105bd1450; PYRO:obj_c6054e00556e4cea999ae2e031f9d621@127.0.0.1:59585>, '5_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x105bd1600; PYRO:obj_62ded7d6e9184e1a95b3493fefd59f7f@127.0.0.1:59586>}
+2022-10-19 16:59:13.550573 Seller 1 has 9 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:13.967089 Seller 1 has 8 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:14.177590 Seller 1 has 7 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:14.278260 Seller 1 has 6 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:14.322787 Seller 1 has 5 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:14.371021 Seller 1 has 4 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:14.446172 Seller 1 has 3 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:14.553988 Seller 1 has 2 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:14.601928 Seller 1 has 1 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:14.657611 Seller 1 has 0 items of SALT remaining after selling to Buyer 3
+2022-10-19 16:59:14.657636 Seller 1 now sells 10 items of SALT
+2022-10-19 16:59:13.418534 Seller 4 has 9 items of FISH remaining after selling to Buyer 0
+4_Ankitas-MacBook-Pro.local SELL FISH {'0_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10f2d4f70; PYRO:obj_7b3c226cdf0f4e178b8ac9e1e1451df6@127.0.0.1:59580>, '1_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10f2d5960; PYRO:obj_9d729513855a492a873d73768888eae6@127.0.0.1:59576>}
+2022-10-19 16:59:13.537452 Seller 4 has 8 items of FISH remaining after selling to Buyer 0
+2022-10-19 16:59:13.759238 Seller 4 has 7 items of FISH remaining after selling to Buyer 0
+2022-10-19 16:59:13.797005 Seller 4 has 6 items of FISH remaining after selling to Buyer 0
+2022-10-19 16:59:13.833543 Seller 4 has 5 items of FISH remaining after selling to Buyer 0
+2022-10-19 16:59:13.974144 Seller 4 has 4 items of FISH remaining after selling to Buyer 0
+2022-10-19 16:59:14.065576 Seller 4 has 3 items of FISH remaining after selling to Buyer 0
+2022-10-19 16:59:14.165883 Seller 4 has 2 items of FISH remaining after selling to Buyer 0
+2022-10-19 16:59:14.211211 Seller 4 has 1 items of FISH remaining after selling to Buyer 0

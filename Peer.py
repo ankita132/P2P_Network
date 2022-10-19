@@ -10,7 +10,7 @@ import copy
 import sys
 import datetime
 import config as cfg
-from TestGraph import mapped_items
+from tests.TestGraph import mapped_items
 
 class Peer(Thread):
     def __init__(self, id, role, no_of_items, items, host_server, all_nodes, neighbor_ids, hopcount):
@@ -62,14 +62,14 @@ class Peer(Thread):
                 time.sleep(1)
 
                 self.neighbors = self.get_neighbors()
-                #print(self.id, self.role, self.item, self.neighbors)
+                print(self.id, self.role, self.item, self.neighbors)
                 if(cfg.env == "TEST"):
                     self.start_buy_sell_test()
                 else:
                     self.start_buy_sell()
                 
         except Exception as e:
-            print("Exception occurred at run function")
+            print("Error occurred at run function")
             print(e)
 
     @Pyro4.expose
@@ -107,8 +107,9 @@ class Peer(Thread):
 
     def start_buy_sell_test(self):
         if(self.role == "BUY"):
-            while True and self.role == "BUY":
-                #self.start_buying()
+            if self.role == "BUY":
+                for i in range(cfg.MAX_REQUESTS):
+                    self.start_buying()
                 time.sleep(1)
 
         while True and self.role == "SELL":
@@ -211,11 +212,14 @@ class Peer(Thread):
         with self.itemlock:
             if self.current_items > 0:
                 self.current_items -= 1
+                print("{} Seller {} has {} items of {} remaining after selling to Buyer {}".format(
+                    datetime.datetime.now(), self.id.split('_')[0], self.current_items, self.item, peer_id.split('_')[0]))
             # if seller has no more remaining items to sell, chose another item randomly to sell
                 if self.current_items == 0:
                     self.item = self.get_random_item()
                     self.current_items = self.total_items
                     print("{} Seller {} now sells {} items of {}".format(datetime.datetime.now(), self.id.split('_')[0], self.current_items, self.item))
                 return True
+            
 
     

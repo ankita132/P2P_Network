@@ -7,7 +7,7 @@ import Pyro4
 from multiprocessing import Process
 import os
 import time
-import TestGraph
+import tests.TestGraph as TestGraph
 
 
 def server_identity():
@@ -92,12 +92,14 @@ def get_nodes():
         time.sleep(2)
     
     for i in range(no_of_nodes):
-        random_ids = random.sample(range(0, no_of_nodes-1), 3)
+        neighbors_count = random.randint(1, 3)
+        neighbors_sample_list = [y for y in range(0, no_of_nodes) if y != i]
+
+        random_ids = random.sample(neighbors_sample_list, neighbors_count)
         neighbors = []
         for id in random_ids:
-            if(id != i):
-                neighbors.append(str(id) + server_identity())
-
+            neighbors.append(str(id) + server_identity())
+        
         role = roles[random.randint(0,len(roles) - 1)]
         id = str(i) + server_identity()
         all_nodes.append({"id": id, "role": role, "neighbors": neighbors})
