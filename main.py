@@ -6,7 +6,9 @@ import socket
 import Pyro4
 from multiprocessing import Process
 import os
-from threading import Thread
+import time
+import TestGraph
+
 
 def server_identity():
     return "_" + socket.gethostname()
@@ -86,8 +88,8 @@ def get_nodes():
     try:
         ns = Pyro4.locateNS(host=host_server)
     except Exception as e:
-        print('No nameserver found, starting new namserver')
-        Thread(target=Pyro4.naming.startNSloop, kwargs={"host": host_server}).start()
+        Process(target=Pyro4.naming.startNSloop, kwargs={"host": host_server}).start()
+        time.sleep(2)
     
     for i in range(no_of_nodes):
         random_ids = random.sample(range(0, no_of_nodes-1), 3)
@@ -105,7 +107,10 @@ def get_nodes():
 if __name__ == '__main__':
     try:
         while True:
-            all_nodes,no_of_items,items, host_server = get_nodes()
+            if(cfg.env == "TEST"):
+                all_nodes,no_of_items,items,host_server = TestGraph.test_graph()
+            else:
+                all_nodes,no_of_items,items,host_server = get_nodes()
             if(check_logistics(all_nodes)): break
 
         hopcount = get_max_depth(all_nodes)-1
