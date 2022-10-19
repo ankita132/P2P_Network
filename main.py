@@ -9,7 +9,6 @@ import os
 import time
 import TestGraph
 
-
 def server_identity():
     return "_" + socket.gethostname()
 
@@ -109,12 +108,16 @@ if __name__ == '__main__':
         while True:
             if(cfg.env == "TEST"):
                 all_nodes,no_of_items,items,host_server = TestGraph.test_graph()
+                try:
+                    ns = Pyro4.locateNS(host=host_server)
+                except Exception as e:
+                    Process(target=Pyro4.naming.startNSloop, kwargs={"host": host_server}).start()
             else:
                 all_nodes,no_of_items,items,host_server = get_nodes()
             if(check_logistics(all_nodes)): break
 
         hopcount = random.randint(2, get_max_depth(all_nodes)-1)
-        print(hopcount)
+        print("HOPCOUNT ", hopcount)
         processes = []
         for i in range (0, len(all_nodes)):
             processes.append(Process(target=process_func, args=(all_nodes,no_of_items,items, host_server,i, hopcount)))

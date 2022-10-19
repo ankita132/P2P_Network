@@ -1,11 +1,10 @@
 import socket
 import config as cfg
-
+import test
 
 mapped_neighbors = [[1,2], [4,5], [3,5], [0,4,5], [0,1], [0,4]]
 mapped_roles = ["BUY", "SELL", "BUY", "BUY", "SELL", "SELL"]
-mapped_items = ["FISH", "SALT", "BOAR", "SALT", "FISH", "BOAR"]
-#mapped_items = ["FISH", "BOAR", "BOAR", "SALT", "FISH", "BOAR"]
+mapped_items = ["FISH", "SALT", "BOAR", "SALT", "SALT", "BOAR"]
 
 def test_graph():
     all_nodes = []

@@ -99,16 +99,19 @@ class Peer(Thread):
                     else:
                         print("{} Buyer {} failed to buy {} from Seller {}".format(datetime.datetime.now(), self.id.split('_')[0], self.item, random_seller_id.split('_')[0]))
                         isBought = False
+            else:
+                print("No seller found for Buyer {} looking for {}".format(self.id,self.item))
+                isBought = False
             self.sellers = []
             print("\n")
             self.item = self.get_random_item()
 
-            return isBought
+        return isBought
 
     def start_buy_sell_test(self):
         if(self.role == "BUY"):
             while True and self.role == "BUY":
-                #self.start_buying()
+                # self.start_buying()
                 time.sleep(1)
 
         while True and self.role == "SELL":
@@ -210,7 +213,10 @@ class Peer(Thread):
     def buy(self, peer_id):
         with self.itemlock:
             if self.current_items > 0:
+                if cfg.env == "TEST":
+                        print("{} Seller {} has {} items of {}".format(datetime.datetime.now(), self.id.split("_")[0], self.current_items, self.item))
                 self.current_items -= 1
+                print("{} Seller {} has {} items of {} remaining after selling to Buyer {}".format(datetime.datetime.now(), self.id.split('_')[0], self.current_items, self.item, peer_id.split('_')[0]))   
             # if seller has no more remaining items to sell, chose another item randomly to sell
                 if self.current_items == 0:
                     self.item = self.get_random_item()
