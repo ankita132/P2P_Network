@@ -113,7 +113,8 @@ if __name__ == '__main__':
                 all_nodes,no_of_items,items,host_server = get_nodes()
             if(check_logistics(all_nodes)): break
 
-        hopcount = get_max_depth(all_nodes)-1
+        hopcount = random.randint(2, get_max_depth(all_nodes)-1)
+        print(hopcount)
         processes = []
         for i in range (0, len(all_nodes)):
             processes.append(Process(target=process_func, args=(all_nodes,no_of_items,items, host_server,i, hopcount)))
