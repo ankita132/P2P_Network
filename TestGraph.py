@@ -2,7 +2,8 @@ import socket
 import config as cfg
 
 mapped_items = ["FISH", "SALT", "BOAR", "SALT", "FISH", "SALT"]
-    
+
+## use different networks for different test cases    
 def send_tests():
     match cfg.TEST_CASE_NO:
         case 1:
@@ -18,6 +19,7 @@ def send_tests():
         case 6:
             return test_graph6()
 
+# create test graph with predefined network specifications
 def create_graph(mapped_neighbors, mapped_roles):
     all_nodes = []
     no_of_items = cfg.market_data["items_size"]
@@ -32,31 +34,37 @@ def create_graph(mapped_neighbors, mapped_roles):
         all_nodes.append({"id": id, "role": role, "neighbors": neighbors})
     return all_nodes,no_of_items,items,host_server
 
+# test graph specification 1
 def test_graph1():
     mapped_neighbors = [[1,2], [4,5], [3,5], [0,4,5], [0,1], [0,4]]
     mapped_roles = ["BUY", "SELL", "BUY", "BUY", "SELL", "SELL"]
     return create_graph(mapped_neighbors, mapped_roles)
 
+# test graph specification 2
 def test_graph2():
     mapped_neighbors = [[1], [2], [1]]
     mapped_roles = ["BUY", "SELL", "BUY"]
     return create_graph(mapped_neighbors, mapped_roles)
 
+# test graph specification 3
 def test_graph3():
     mapped_neighbors = [[1], [2], [1], [1]]
     mapped_roles = ["BUY", "SELL", "BUY", "BUY"]
     return create_graph(mapped_neighbors, mapped_roles)
 
+# test graph specification 4
 def test_graph4():
     mapped_neighbors = [[1], [2], [1], [1], [1]]
     mapped_roles = ["BUY", "SELL", "BUY", "BUY", "BUY"]
     return create_graph(mapped_neighbors, mapped_roles)
 
+# test graph specification 5
 def test_graph5():
     mapped_neighbors = [[1], [0]]
     mapped_roles = ["BUY", "SELL"]
     return create_graph(mapped_neighbors, mapped_roles)
 
+# test graph specification 6
 def test_graph6():
     mapped_neighbors = [[1], [2], [1], [1], [1], [1]]
     mapped_roles = ["BUY", "SELL", "BUY", "BUY", "BUY", "BUY"]

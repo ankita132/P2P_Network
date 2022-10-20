@@ -1,3 +1,5 @@
+# Code to create child processes
+
 import config as cfg
 import sys
 import random
@@ -13,6 +15,7 @@ from TestGraph import send_tests
 def server_identity():
     return "_" + socket.gethostname()
 
+# helper function bfs to compute maximum depth of network
 def bfs(all_nodes, root):
     maxdepth = 0
     visited = []
@@ -29,6 +32,7 @@ def bfs(all_nodes, root):
                 queue.append((index,depth+1))
     return maxdepth
 
+# helper function to check graph fully connected or not
 def graph_util(v, all_nodes):
     visited = set()
     stack = [v]
@@ -41,12 +45,14 @@ def graph_util(v, all_nodes):
                 stack.append(index)
     return len(visited) == len(all_nodes)
 
+# check if graph is fully connected or not
 def check_graph_connected(all_nodes):
     for i in range(0, len(all_nodes)):
         if(graph_util(i, all_nodes)):
             return True
     return False
 
+# get the maximum depth of the network
 def get_max_depth(all_nodes):
     max_depth = 0
     for i in range(0, len(all_nodes)):
@@ -54,6 +60,7 @@ def get_max_depth(all_nodes):
 
     return max_depth
 
+# check if graph fully connected or not, network does not have only buyers or only sellers
 def check_logistics(all_nodes):
     is_all_buy= True 
     is_all_sell = True
@@ -66,6 +73,7 @@ def check_logistics(all_nodes):
 
     return not(is_all_buy) and not(is_all_sell) and is_connected
 
+# create a peer in the network
 def process_func(all_nodes, no_of_items, items, host_server, i, hopcount):
     #print(os.getpid())
     os.chdir("/")
@@ -73,6 +81,7 @@ def process_func(all_nodes, no_of_items, items, host_server, i, hopcount):
     peer.start()
     peer.join()
 
+# create a process for every peer and initialize neighbors to each peer
 def get_nodes():
     if(len(sys.argv) < 2):
         print("Please specify the number of nodes")
@@ -119,10 +128,10 @@ if __name__ == '__main__':
         if(cfg.env == "TEST"):
             hopcount = get_max_depth(all_nodes)-1
         else:
-            hopcount = random.randint(2, get_max_depth(all_nodes)-1)
+            hopcount = random.randint(2, get_max_depth(all_nodes)-1) ## randomly initialize hopcount less than max depth
         
         processes = []
-        for i in range (0, len(all_nodes)):
+        for i in range (0, len(all_nodes)): ## create process for every peer
             processes.append(Process(target=process_func, args=(all_nodes,no_of_items,items, host_server,i, hopcount)))
                 
         for process in processes:

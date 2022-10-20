@@ -1,5 +1,5 @@
-from audioop import avg
-from cgitb import lookup
+# code to handle incoming requests to each peer
+
 import socket
 from threading import Thread, Lock
 from concurrent.futures import ThreadPoolExecutor
@@ -13,6 +13,7 @@ import datetime
 import config as cfg
 from TestGraph import mapped_items
 
+# Peer is a thread type object with maximum 10 workers to handle concurrency
 class Peer(Thread):
     def __init__(self, id, role, no_of_items, items, host_server, all_nodes, neighbor_ids, hopcount):
         self.id = id
@@ -34,13 +35,14 @@ class Peer(Thread):
         self.requests = 0
         self.hopcount = hopcount
     
+    # assign a random item to every peer 
     def get_random_item(self):
         if(cfg.env == "TEST"):
             i = int(self.id.replace("_" + socket.gethostname(), ""))
             return mapped_items[i]
         return self.items[random.randint(0, len(self.items) - 1)]
 
-
+# get neighbor ids in nameserver of every peer
     def get_neighbors(self):
         neighbors = {}
         for neighbor_id in self.neighbor_ids:
@@ -48,12 +50,14 @@ class Peer(Thread):
 
         return neighbors
 
+# locate nameserver
     def get_nameserver(self, host_server):
         try:
             return Pyro4.locateNS(host=host_server)
         except Exception as e:
             print(e)
 
+# overwrite thread class run function with buy and sell function calls
     def run(self):
         try:
             with Pyro4.Daemon(host=self.hostname) as daemon:
@@ -78,6 +82,7 @@ class Peer(Thread):
     def get_current_item_values(self):
         return self.current_items
 
+# start buy process by lookup in neighbors
     @Pyro4.expose
     def start_buying(self):
         isBought = False
@@ -96,7 +101,7 @@ class Peer(Thread):
         for lookup_request in lookup_requests:
             lookup_request.result()
         
-        with self.seller_list_lock:
+        with self.seller_list_lock: ## lock when buyer seller transaction taking place
             if self.sellers:
                 random_seller_id = self.sellers[random.randint(0, len(self.sellers) - 1)]
                 with Pyro4.Proxy(self.ns.lookup(random_seller_id)) as seller:
@@ -118,6 +123,7 @@ class Peer(Thread):
 
         return isBought, total_time
 
+# start buy sell process for test cases, runs only once
     def start_buy_sell_test(self):
         if(self.role == "BUY"):
             if (cfg.MAX_REQUESTS=="Inf"):
@@ -138,6 +144,7 @@ class Peer(Thread):
         while True and self.role == "SELL":
             time.sleep(1)
 
+# start buy sell process
     def start_buy_sell(self):
         while True and self.role == "BUY":
             self.start_buying()  
@@ -182,6 +189,7 @@ class Peer(Thread):
 
         self.executor.submit(self.send_message_to_neighbors_hopcount, message, hopcount)
 
+# look for seller in neigborhood for buy request
     @Pyro4.expose
     def lookup(self, buyer_id, product_name, hopcount, search_path):
         hopcount = hopcount - 1
@@ -191,10 +199,10 @@ class Peer(Thread):
         last_peer_id = search_path[-1]
         try:
             if self.role == "SELL" and product_name == self.item and self.current_items > 0:
-                with Pyro4.Proxy(self.ns.lookup(last_peer_id)) as recipient:
+                with Pyro4.Proxy(self.ns.lookup(last_peer_id)) as receiver:
                     search_path.pop()
                 search_path.insert(0, self.id)
-                self.executor.submit(recipient.reply, self.id, search_path)
+                self.executor.submit(receiver.reply, self.id, search_path)
             else:
                 neighbors_copy = copy.deepcopy(self.neighbors)
 
@@ -209,7 +217,7 @@ class Peer(Thread):
             print("Error occurred at lookup")
             print(e)
 
-
+# matched seller sends a reply to the buyer
     @Pyro4.expose
     def reply(self, sellerID, reply_path):
         try:
@@ -219,9 +227,9 @@ class Peer(Thread):
                    self.sellers.extend(reply_path)
 
             elif reply_path and len(reply_path) > 1:
-                recipient_id = reply_path.pop()
-                with Pyro4.Proxy(self.ns.lookup(recipient_id)) as recipient:
-                    self.executor.submit(recipient.reply, sellerID, reply_path)
+                receiver_id = reply_path.pop()
+                with Pyro4.Proxy(self.ns.lookup(receiver_id)) as receiver:
+                    self.executor.submit(receiver.reply, sellerID, reply_path)
             
             else:
                 print("The reply path is empty")
@@ -230,9 +238,10 @@ class Peer(Thread):
             print("Error occured at reply")
             print(e)
 
+# buyer purchases the item from matched seller and decrement item count of seller
     @Pyro4.expose
     def buy(self, peer_id):
-        with self.itemlock:
+        with self.itemlock: ## lock when updating seller item count
             if self.current_items > 0:
                 self.current_items -= 1
                 print("{} Seller {} has {} items of {} remaining after selling to Buyer {}".format(
