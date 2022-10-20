@@ -1,0 +1,688 @@
+2_Ankitas-MacBook-Pro.local BUY BOAR {'1_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x102281300; PYRO:obj_d53ac303c15c48399c4b5f4623327551@127.0.0.1:51011>}
+2022-10-19 20:35:38.866946 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:38.867078 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:39.872224 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:39.872432 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:40.879141 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:40.879369 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:41.883496 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:41.883635 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:42.891249 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:42.891482 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:43.898837 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:43.899048 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:44.906996 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:44.907230 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:45.912431 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:45.912577 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:46.921072 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:46.921272 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:47.925000 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:47.925204 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:48.931444 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:48.932065 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:49.935304 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:49.935447 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:50.940154 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:50.940345 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:51.947545 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:51.947664 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:52.953669 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:52.953873 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:53.959576 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:53.959715 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:54.967573 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:54.968400 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:55.977254 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:55.977376 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:56.987380 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:56.987482 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:57.997996 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:57.998144 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:59.007931 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:35:59.008080 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:36:00.018098 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:36:00.018273 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:36:01.025186 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:36:01.025286 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:36:02.051040 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:36:02.051906 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:36:03.057411 Buyer 2 is requesting to buy BOAR
+2022-10-19 20:36:03.057622 Buyer 2 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 2_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+Average runtime for  2_Ankitas-MacBook-Pro.local is 5.17508 ms
+Average runtime for  2_Ankitas-MacBook-Pro.local is 5.17508 ms
+3_Ankitas-MacBook-Pro.local BUY SALT {'1_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10f835300; PYRO:obj_d53ac303c15c48399c4b5f4623327551@127.0.0.1:51011>}
+2022-10-19 20:35:38.904587 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:38.904728 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:38.909872 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:38.913062 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:39.914967 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:39.915178 Buyer 3 issued a lookup to neighbour 1 for item SALT
+No seller found for Buyer 3_Ankitas-MacBook-Pro.local looking for SALT
+
+
+2022-10-19 20:35:39.923827 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:40.927258 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:40.927384 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:40.935271 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:40.938021 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:41.939585 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:41.939710 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:41.946635 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:41.948669 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:42.949448 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:42.949576 Buyer 3 issued a lookup to neighbour 1 for item SALT
+No seller found for Buyer 3_Ankitas-MacBook-Pro.local looking for SALT
+
+
+2022-10-19 20:35:42.957184 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:43.958856 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:43.958986 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:43.975282 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:43.977584 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:44.981356 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:44.981463 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:44.986157 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:44.987391 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:45.992065 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:45.992171 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:45.995966 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:45.997251 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:47.000070 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:47.000178 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:47.005095 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:47.006441 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:48.007580 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:48.007680 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:48.017033 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:48.019024 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:49.021380 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:49.021537 Buyer 3 issued a lookup to neighbour 1 for item SALT
+No seller found for Buyer 3_Ankitas-MacBook-Pro.local looking for SALT
+
+
+2022-10-19 20:35:49.026222 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:50.030381 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:50.030531 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:50.035529 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:50.037207 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:51.041097 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:51.041274 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:51.046190 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:51.048300 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:52.049952 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:52.050064 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:52.059481 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:52.062833 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:53.067725 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:53.067820 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:53.071403 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:53.073138 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:54.073472 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:54.073575 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:54.081117 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:54.083720 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:55.088128 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:55.088300 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:55.093408 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:55.095538 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:56.098648 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:56.098847 Buyer 3 issued a lookup to neighbour 1 for item SALT
+No seller found for Buyer 3_Ankitas-MacBook-Pro.local looking for SALT
+
+
+2022-10-19 20:35:56.103573 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:57.108639 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:57.108770 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:57.113768 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:57.115075 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:58.115950 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:58.116046 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:58.121277 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:58.122646 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:35:59.124340 Buyer 3 is requesting to buy SALT
+2022-10-19 20:35:59.124447 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:35:59.131511 Buyer 3 received a reply from Seller 1
+2022-10-19 20:35:59.133234 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:36:00.134640 Buyer 3 is requesting to buy SALT
+2022-10-19 20:36:00.134752 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:36:00.138642 Buyer 3 received a reply from Seller 1
+2022-10-19 20:36:00.140493 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:36:01.146688 Buyer 3 is requesting to buy SALT
+2022-10-19 20:36:01.146806 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:36:01.174667 Buyer 3 received a reply from Seller 1
+2022-10-19 20:36:01.179789 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:36:02.184753 Buyer 3 is requesting to buy SALT
+2022-10-19 20:36:02.184850 Buyer 3 issued a lookup to neighbour 1 for item SALT
+2022-10-19 20:36:02.199334 Buyer 3 received a reply from Seller 1
+2022-10-19 20:36:02.210856 Buyer 3 bought SALT from Seller 1
+
+
+2022-10-19 20:36:03.213905 Buyer 3 is requesting to buy SALT
+2022-10-19 20:36:03.214019 Buyer 3 issued a lookup to neighbour 1 for item SALT
+No seller found for Buyer 3_Ankitas-MacBook-Pro.local looking for SALT
+
+
+2022-10-19 20:36:03.219553 Buyer 3 received a reply from Seller 1
+Average runtime for  3_Ankitas-MacBook-Pro.local is 9.84003 ms
+Average runtime for  3_Ankitas-MacBook-Pro.local is 9.84003 ms
+0_Ankitas-MacBook-Pro.local BUY FISH {'1_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x103ec9300; PYRO:obj_d53ac303c15c48399c4b5f4623327551@127.0.0.1:51011>}
+2022-10-19 20:35:38.842825 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:38.842963 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:39.850898 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:39.851102 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:40.856787 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:40.856991 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:41.866800 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:41.867016 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:42.873832 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:42.874037 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:43.882370 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:43.882496 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:44.891311 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:44.891558 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:45.896993 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:45.897192 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:46.902638 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:46.902842 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:47.912601 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:47.912768 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:48.922283 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:48.922489 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:49.930869 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:49.931066 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:50.939950 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:50.940291 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:51.947554 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:51.947665 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:52.953682 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:52.953873 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:53.961464 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:53.961591 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:54.970818 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:54.970934 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:55.977608 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:55.977712 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:56.987745 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:56.987826 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:57.997998 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:57.998144 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:59.007931 Buyer 0 is requesting to buy FISH
+2022-10-19 20:35:59.008080 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:36:00.020128 Buyer 0 is requesting to buy FISH
+2022-10-19 20:36:00.020267 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:36:01.027478 Buyer 0 is requesting to buy FISH
+2022-10-19 20:36:01.027569 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:36:02.143001 Buyer 0 is requesting to buy FISH
+2022-10-19 20:36:02.143177 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:36:03.155134 Buyer 0 is requesting to buy FISH
+2022-10-19 20:36:03.155263 Buyer 0 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 0_Ankitas-MacBook-Pro.local looking for FISH
+
+
+Average runtime for  0_Ankitas-MacBook-Pro.local is 9.91446 ms
+Average runtime for  0_Ankitas-MacBook-Pro.local is 9.91446 ms
+4_Ankitas-MacBook-Pro.local BUY FISH {'1_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10a73d300; PYRO:obj_d53ac303c15c48399c4b5f4623327551@127.0.0.1:51011>}
+2022-10-19 20:35:38.905253 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:38.905372 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:39.914662 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:39.914888 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:40.925340 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:40.925542 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:41.937069 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:41.937275 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:42.948187 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:42.948390 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:43.958228 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:43.958350 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:44.974261 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:44.974497 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:45.983092 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:45.983303 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:46.992727 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:46.992946 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:47.998160 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:47.998388 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:49.006457 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:49.006663 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:50.016763 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:50.016964 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:51.027663 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:51.027873 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:52.040145 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:52.040387 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:53.056677 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:53.056786 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:54.064808 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:54.064919 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:55.074264 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:55.074395 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:56.083037 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:56.083253 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:57.093489 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:57.093629 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:58.104397 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:58.104801 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:35:59.118935 Buyer 4 is requesting to buy FISH
+2022-10-19 20:35:59.119137 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:36:00.126885 Buyer 4 is requesting to buy FISH
+2022-10-19 20:36:00.127029 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:36:01.138817 Buyer 4 is requesting to buy FISH
+2022-10-19 20:36:01.138913 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:36:02.175016 Buyer 4 is requesting to buy FISH
+2022-10-19 20:36:02.175129 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+2022-10-19 20:36:03.186626 Buyer 4 is requesting to buy FISH
+2022-10-19 20:36:03.186771 Buyer 4 issued a lookup to neighbour 1 for item FISH
+No seller found for Buyer 4_Ankitas-MacBook-Pro.local looking for FISH
+
+
+Average runtime for  4_Ankitas-MacBook-Pro.local is 7.90668 ms
+Average runtime for  4_Ankitas-MacBook-Pro.local is 7.90668 ms
+5_Ankitas-MacBook-Pro.local BUY BOAR {'1_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x1042ad300; PYRO:obj_d53ac303c15c48399c4b5f4623327551@127.0.0.1:51011>}
+2022-10-19 20:35:38.909669 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:38.909781 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:39.918043 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:39.918167 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:40.927286 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:40.927408 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:41.939069 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:41.939194 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:42.948187 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:42.948390 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:43.957770 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:43.957911 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:44.979330 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:44.979434 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:45.988061 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:45.988167 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:46.995933 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:46.996060 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:48.002920 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:48.003028 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:49.012523 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:49.012629 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:50.019315 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:50.019442 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:51.027688 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:51.027875 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:52.037395 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:52.037546 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:53.050490 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:53.050631 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:54.060184 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:54.060315 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:55.072198 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:55.072412 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:56.082079 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:56.082232 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:57.093266 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:57.093427 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:58.104477 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:58.105258 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:35:59.118935 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:35:59.119138 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:36:00.127965 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:36:00.128260 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:36:01.139080 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:36:01.139173 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:36:02.175457 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:36:02.175552 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+2022-10-19 20:36:03.186692 Buyer 5 is requesting to buy BOAR
+2022-10-19 20:36:03.187169 Buyer 5 issued a lookup to neighbour 1 for item BOAR
+No seller found for Buyer 5_Ankitas-MacBook-Pro.local looking for BOAR
+
+
+Average runtime for  5_Ankitas-MacBook-Pro.local is 8.00879 ms
+Average runtime for  5_Ankitas-MacBook-Pro.local is 8.00879 ms
+1_Ankitas-MacBook-Pro.local SELL SALT {'2_Ankitas-MacBook-Pro.local': <Pyro4.core.URI at 0x10bddd720; PYRO:obj_e802ff64c1914c2b981170f39529a041@127.0.0.1:51013>}
+2022-10-19 20:35:38.912834 Seller 1 has 9 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:40.937614 Seller 1 has 8 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:41.948489 Seller 1 has 7 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:43.977418 Seller 1 has 6 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:44.987217 Seller 1 has 5 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:45.997075 Seller 1 has 4 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:47.006263 Seller 1 has 3 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:48.018860 Seller 1 has 2 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:50.036972 Seller 1 has 1 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:51.048014 Seller 1 has 0 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:51.048046 Seller 1 now sells 10 items of SALT
+2022-10-19 20:35:52.062367 Seller 1 has 9 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:53.072985 Seller 1 has 8 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:54.083552 Seller 1 has 7 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:55.095356 Seller 1 has 6 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:57.114899 Seller 1 has 5 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:58.122466 Seller 1 has 4 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:35:59.133059 Seller 1 has 3 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:36:00.140300 Seller 1 has 2 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:36:01.177947 Seller 1 has 1 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:36:02.208972 Seller 1 has 0 items of SALT remaining after selling to Buyer 3
+2022-10-19 20:36:02.209027 Seller 1 now sells 10 items of SALT

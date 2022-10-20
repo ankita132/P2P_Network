@@ -1,3 +1,4 @@
+from audioop import avg
 from cgitb import lookup
 import socket
 from threading import Thread, Lock
@@ -10,7 +11,7 @@ import copy
 import sys
 import datetime
 import config as cfg
-from tests.TestGraph import mapped_items
+from TestGraph import mapped_items
 
 class Peer(Thread):
     def __init__(self, id, role, no_of_items, items, host_server, all_nodes, neighbor_ids, hopcount):
@@ -75,6 +76,8 @@ class Peer(Thread):
     @Pyro4.expose
     def start_buying(self):
         isBought = False
+        start = time.time()
+
         print("{} Buyer {} is requesting to buy {}".format(datetime.datetime.now(), self.id.split('_')[0], self.item))
         neighbors_copy = copy.deepcopy(self.neighbors)
         lookup_requests = []
@@ -99,18 +102,29 @@ class Peer(Thread):
                     else:
                         print("{} Buyer {} failed to buy {} from Seller {}".format(datetime.datetime.now(), self.id.split('_')[0], self.item, random_seller_id.split('_')[0]))
                         isBought = False
+            else:
+                print("No seller found for Buyer {} looking for {}".format(self.id, self.item))
+                isBought = False
             self.sellers = []
             print("\n")
             self.item = self.get_random_item()
 
-            return isBought
+        total_time = time.time() - start
+
+        return isBought, total_time
 
     def start_buy_sell_test(self):
         if(self.role == "BUY"):
-            if self.role == "BUY":
-                for i in range(cfg.MAX_REQUESTS):
-                    self.start_buying()
+            total_runtime = 0.0
+            for i in range(cfg.MAX_REQUESTS):
+                isBought, total_time = self.start_buying()
+                total_runtime += total_time
                 time.sleep(1)
+
+            avg_time = total_runtime / cfg.MAX_REQUESTS
+            avg_time_print = float("{:.5f}".format(avg_time*1000))
+            print("Average runtime for ", self.id, "is", avg_time_print, "ms")
+            print("Average runtime for ", self.id, "is", avg_time_print, "ms")
 
         while True and self.role == "SELL":
             time.sleep(1)

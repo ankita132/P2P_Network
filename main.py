@@ -7,7 +7,7 @@ import Pyro4
 from multiprocessing import Process
 import os
 import time
-import tests.TestGraph as TestGraph
+from TestGraph import send_tests
 
 
 def server_identity():
@@ -110,13 +110,17 @@ if __name__ == '__main__':
     try:
         while True:
             if(cfg.env == "TEST"):
-                all_nodes,no_of_items,items,host_server = TestGraph.test_graph()
+                all_nodes,no_of_items,items,host_server = send_tests()
+                break
             else:
                 all_nodes,no_of_items,items,host_server = get_nodes()
-            if(check_logistics(all_nodes)): break
+                if(check_logistics(all_nodes)): break
 
-        hopcount = random.randint(2, get_max_depth(all_nodes)-1)
-        print(hopcount)
+        if(cfg.env == "TEST"):
+            hopcount = get_max_depth(all_nodes)-1
+        else:
+            hopcount = random.randint(2, get_max_depth(all_nodes)-1)
+        
         processes = []
         for i in range (0, len(all_nodes)):
             processes.append(Process(target=process_func, args=(all_nodes,no_of_items,items, host_server,i, hopcount)))
