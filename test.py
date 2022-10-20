@@ -6,9 +6,7 @@ import config as cfg
 
 class test_network(unittest.TestCase):
     def test_no_item_seller(self):
-        mapped_roles = ["BUY", "SELL", "BUY", "BUY", "SELL", "SELL"]
-        mapped_items = ["FISH", "FISH", "BOAR", "SALT", "SALT", "BOAR"] 
-        ns = Pyro4.locateNS(host="127.0.0.1")
+        ns = Pyro4.locateNS(host=cfg.local_server)
         i = 0
         uri = ns.lookup(str(i) + "_" + socket.gethostname())
         peer1 = Pyro4.Proxy(uri)

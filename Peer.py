@@ -115,16 +115,20 @@ class Peer(Thread):
 
     def start_buy_sell_test(self):
         if(self.role == "BUY"):
-            total_runtime = 0.0
-            for i in range(cfg.MAX_REQUESTS):
-                isBought, total_time = self.start_buying()
-                total_runtime += total_time
-                time.sleep(1)
+            if (cfg.MAX_REQUESTS=="Inf"):
+                while True:
+                    isBought, total_time = self.start_buying()
+            else: 
+                total_runtime = 0.0
+                for i in range(cfg.MAX_REQUESTS):
+                    isBought, total_time = self.start_buying()
+                    total_runtime += total_time
+                    time.sleep(1)
 
-            avg_time = total_runtime / cfg.MAX_REQUESTS
-            avg_time_print = float("{:.5f}".format(avg_time*1000))
-            print("Average runtime for ", self.id, "is", avg_time_print, "ms")
-            print("Average runtime for ", self.id, "is", avg_time_print, "ms")
+                avg_time = total_runtime / cfg.MAX_REQUESTS
+                avg_time_print = float("{:.5f}".format(avg_time*1000))
+                print("Average runtime for ", self.id, "is", avg_time_print, "ms")
+                print("Average runtime for ", self.id, "is", avg_time_print, "ms")
 
         while True and self.role == "SELL":
             time.sleep(1)
