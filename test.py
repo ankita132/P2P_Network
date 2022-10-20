@@ -31,6 +31,19 @@ class test_network(unittest.TestCase):
         current_item_count_after_buy = peer1.get_current_item_values()
         self.assertEqual(current_item_count, current_item_count_after_buy)
 
+    def test_item_count_update_after_exhaustion(self):
+        ns = Pyro4.locateNS(host=cfg.local_server)
+        i = 0
+        uri = ns.lookup(str(i) + "_" + socket.gethostname())
+        peer1 = Pyro4.Proxy(uri)
+        current_item_count = peer1.get_current_item_values()
+        
+        for val in range(0, 10):
+            isBought, timetaken = peer1.start_buying()
+
+        current_item_count_after_buy = peer1.get_current_item_values()
+        self.assertEqual(current_item_count, current_item_count_after_buy)
+
     
 
 if __name__ == '__main__':
