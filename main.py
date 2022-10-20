@@ -119,7 +119,10 @@ if __name__ == '__main__':
     try:
         while True:
             if(cfg.env == "TEST"):
-                all_nodes,no_of_items,items,host_server = send_tests()
+                if (cfg.TEST_CASE_NO == "No"):
+                    all_nodes,no_of_items,items,host_server = get_nodes()
+                else:
+                    all_nodes,no_of_items,items,host_server = send_tests()
                 break
             else:
                 all_nodes,no_of_items,items,host_server = get_nodes()
