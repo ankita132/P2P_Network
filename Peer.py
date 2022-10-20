@@ -73,6 +73,11 @@ class Peer(Thread):
             print("Error occurred at run function")
             print(e)
 
+
+    @Pyro4.expose
+    def get_current_item_values(self):
+        return self.current_items
+
     @Pyro4.expose
     def start_buying(self):
         isBought = False
@@ -117,7 +122,7 @@ class Peer(Thread):
         if(self.role == "BUY"):
             if (cfg.MAX_REQUESTS=="Inf"):
                 while True:
-                    isBought, total_time = self.start_buying()
+                    time.sleep(1)
             else: 
                 total_runtime = 0.0
                 for i in range(cfg.MAX_REQUESTS):

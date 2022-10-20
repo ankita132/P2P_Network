@@ -1,7 +1,7 @@
 import socket
 import config as cfg
 
-mapped_items = ["FISH", "SALT", "BOAR", "SALT", "FISH", "BOAR"]
+mapped_items = ["FISH", "SALT", "BOAR", "SALT", "FISH", "SALT"]
     
 def send_tests():
     match cfg.TEST_CASE_NO:

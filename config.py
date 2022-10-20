@@ -7,6 +7,6 @@ market_data = {
 env = "TEST"
 local_server="127.0.0.1"
 OUTPUT_FILE="output.txt"
-MAX_REQUESTS=25
+MAX_REQUESTS="Inf"
 TEST_CASE_NO=1
 use_anonymous = True
